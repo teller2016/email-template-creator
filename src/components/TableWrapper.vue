@@ -1,18 +1,13 @@
 <template>
-  <table :style="styles.wrapper">
+  <table :style="style.wrapper">
     <slot></slot>
   </table>
 </template>
 
 <script setup lang="ts">
-  import { onMounted, ref } from 'vue';
-  import getStyleFromFile from '@/utils/style';
+  import useStyle from '@/composables/use/use-style';
 
-  let styles = ref({});
-
-  onMounted(async () => {
-    styles.value = await getStyleFromFile('tableWrapper.css');
-  });
+  const { style } = useStyle('tableWrapper.css');
 </script>
 
 <style></style>

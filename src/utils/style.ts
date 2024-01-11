@@ -26,7 +26,6 @@ export default async function getStyleFromFile(cssFileName: string) {
     const cssFile = await response.text();
     const style = decodeCssFile(cssFile); // decodeCssFile 함수가 존재한다고 가정함
     const styleObject = getStyleObject(style); // getStyleObject 함수가 존재한다고 가정함
-    console.log(styleObject);
 
     return styleObject;
   } catch (error) {

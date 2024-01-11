@@ -2,6 +2,10 @@
   <div ref="htmlContent">
     <TableWrapper>
       <EmailHeader></EmailHeader>
+      <tr>
+        <td>내용</td>
+      </tr>
+      <EmailFooter></EmailFooter>
     </TableWrapper>
   </div>
 
@@ -16,6 +20,7 @@
 <script setup lang="ts">
   import EmailHeader from '@/components/EmailHeader.vue';
   import TableWrapper from '@/components/TableWrapper.vue';
+  import EmailFooter from '@/components/EmailFooter.vue';
   import { ref } from 'vue';
 
   const htmlContent = ref<HTMLElement>();

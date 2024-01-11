@@ -1,0 +1,16 @@
+.header__top {
+  padding: 10px 20px 11px;
+  background: #111;
+}
+
+.header__logoLink {
+  display: inline-block;
+  width: 110px;
+  height: auto;
+  font-size: 0;
+}
+
+.header__logoImg {
+  width: 100%;
+  height: 100%;
+}
