@@ -1,17 +1,17 @@
 <template>
-  <TableWrapper>
-    <EmailHeader></EmailHeader>
+  <Wrapper>
+    <Header></Header>
     <tr>
       <td>내용</td>
     </tr>
-    <EmailFooter></EmailFooter>
-  </TableWrapper>
+    <Footer></Footer>
+  </Wrapper>
 </template>
 
 <script setup lang="ts">
-  import EmailHeader from '@/components/EmailHeader.vue';
-  import TableWrapper from '@/components/TableWrapper.vue';
-  import EmailFooter from '@/components/EmailFooter.vue';
+  import Header from '@/components/Header.vue';
+  import Wrapper from '@/components/Wrapper.vue';
+  import Footer from '@/components/Footer.vue';
 </script>
 
 <style scoped></style>

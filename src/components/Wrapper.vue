@@ -7,7 +7,7 @@
 <script setup lang="ts">
   import useStyle from '@/composables/use/use-style';
 
-  const { style } = useStyle('tableWrapper.css');
+  const { style } = useStyle('wrapper.css');
 </script>
 
 <style></style>

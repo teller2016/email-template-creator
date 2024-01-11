@@ -1,16 +1,18 @@
 <template>
-  <h3>
-    템플릿명: {{ name }}
-    <Button
-      @on-click="downloadHTML"
-      color="orange"
-      style-type="border"
-      size="s"
-      >Download</Button
-    >
-  </h3>
-  <div ref="htmlContent">
-    <slot></slot>
+  <div class="download">
+    <h3 class="download__title">
+      {{ name }}
+      <Button
+        @on-click="downloadHTML"
+        color="orange"
+        style-type="border"
+        size="s"
+        >Download</Button
+      >
+    </h3>
+    <div ref="htmlContent">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -36,4 +38,13 @@
   });
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+  .download {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+
+    &__title {
+      text-align: center;
+    }
+  }
+</style>
