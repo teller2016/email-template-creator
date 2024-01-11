@@ -1,0 +1,29 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "useTabs": false,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "vueIndentScriptAndStyle": true,
+  "endOfLine": "auto",
+  "singleAttributePerLine": true,
+  "bracketSpacing": true,
+  "importOrder": [
+    "^vue(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/services/(.*)$",
+    "^@/utils/(.*)$",
+    "^@/configs/(.*)$",
+    "^@/composables/(.*)$",
+    "^@/components/(.*)$",
+    "^@/views/(.*)$",
+    "^@/stores/(.*)$",
+    "^@/constants/(.*)$",
+    "^@/types/(.*)$",
+    "^@/styles/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}
