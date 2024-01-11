@@ -1,5 +1,14 @@
 <template>
-  <h3>템플릿명: {{ name }} <button @click="downloadHTML">개별 다운로드</button></h3>
+  <h3>
+    템플릿명: {{ name }}
+    <Button
+      @on-click="downloadHTML"
+      color="orange"
+      style-type="border"
+      size="s"
+      >Download</Button
+    >
+  </h3>
   <div ref="htmlContent">
     <slot></slot>
   </div>
@@ -7,6 +16,7 @@
 
 <script setup lang="ts">
   import { ref } from 'vue';
+  import Button from '@/components/Button.vue';
 
   const props = defineProps(['name']);
 

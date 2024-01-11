@@ -13,12 +13,14 @@
     <TestEmail2></TestEmail2>
   </Download>
 
-  <button
-    class="btn"
-    @click="downloadAll"
-  >
-    전체 다운로드
-  </button>
+  <span class="btn-position">
+    <Button
+      @on-click="downloadAll"
+      color="green"
+      style-type="push"
+      >Download All</Button
+    >
+  </span>
 </template>
 
 <script setup lang="ts">
@@ -26,6 +28,7 @@
   import TestEmail from '@/template/TestEmail.vue';
   import TestEmail2 from '@/template/TestEmail2.vue';
   import Download from '@/components/Download.vue';
+  import Button from '@/components/Button.vue';
 
   const testRef = ref();
   const testRef2 = ref();
@@ -38,11 +41,11 @@
   };
 </script>
 
-<style>
-  .btn {
+<style scoped>
+  .btn-position {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 15px;
+    right: 10px;
     height: 40px;
   }
 </style>
