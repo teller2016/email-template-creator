@@ -24,7 +24,9 @@
 
   const htmlContent = ref<HTMLElement>();
   const downloadHTML = () => {
-    const html = htmlContent.value?.innerHTML;
+    const htmlElement = htmlContent.value;
+    if (!htmlElement) return;
+    const html = htmlElement.innerHTML;
     const blob = new Blob([html], { type: 'text/html' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
