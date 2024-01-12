@@ -1,6 +1,7 @@
 .footer {
   padding: 24px 24px 32px;
   background: #f8f8f8;
+  background: var(--grey50);
 }
 
 .footer__content {

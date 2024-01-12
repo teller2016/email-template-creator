@@ -1,0 +1,23 @@
+:root {
+  --p-point: #407dfd;
+
+  --a-point_1: #407df7;
+  --a-point_2: #ff8c00;
+  --a-point_3: #00bdb6;
+  --a-point_3_dark: #006363;
+
+  --black: #111;
+  --white: #fff;
+  --grey50: #f8f8f8;
+  --grey80: #f2f2f2;
+  --grey100: #e8e8e8;
+  --grey200: #ddd;
+  --grey400: #ccc;
+  --grey500: #aaa;
+  --grey600: #888;
+  --grey800: #666;
+
+  --red: #ff2d21;
+  --green: #00c751;
+  --blue: #33a3ff;
+}
