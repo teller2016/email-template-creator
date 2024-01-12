@@ -1,5 +1,9 @@
 <template>
-  <table :style="style.wrapper">
+  <table
+    class="template"
+    :style="style.wrapper"
+    :filename="filename"
+  >
     <slot></slot>
   </table>
 </template>
@@ -8,6 +12,9 @@
   import useStyle from '@/composables/use/use-style';
 
   const { style } = useStyle('wrapper.css');
+  defineProps({
+    filename: String,
+  });
 </script>
 
 <style></style>

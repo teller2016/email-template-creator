@@ -1,5 +1,5 @@
 <template>
-  <Wrapper>
+  <Wrapper filename="테스트">
     <Header></Header>
     <tr>
       <td>내용</td>
